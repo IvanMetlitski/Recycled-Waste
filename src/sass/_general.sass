@@ -1,0 +1,503 @@
+header
+  position: relative
+  height: 50px
+  border-radius: 5px
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
+
+nav
+  position: fixed
+  width: 100%
+  height: 50px
+  background-color: #3b444b
+  z-index: 5
+  border-radius: 5px
+
+.hamburger
+  display: none
+
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style-type: none
+  &_link
+    background: linear-gradient(to bottom, $mainColor 0%, $mainColor 100%)
+    background-position: 0 100%
+    background-repeat: repeat-x
+    background-size: 2px 2px
+    text-decoration: none
+    color: $green
+    font-size: 15px
+    font-weight: 300
+    transition: .5s all
+    padding: 5px
+    &:hover
+      background-size: 4px 50px
+      color: white
+  &_item
+    padding-right: 28px
+    &:last-child
+      border-right: none
+
+.promo
+  min-height: 800px
+  background: url('../img/main/main__background3.jpg') center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+  &_header
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 60px
+    line-height: 60px
+    margin: 0
+    text-align: center
+  &_subheader
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 36px
+    line-height: 36px
+    margin: 0
+    margin-top: 22px
+    text-align: center
+  &_descr
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+    margin-top: 23px
+  &_btn
+    display: block
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, $blue 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    +btn_hover
+
+.reasons
+  padding: 60px 0 15px 0
+  background: url('../img/trash2.jpg') center (center / cover) no-repeat
+  &_block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+  &_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: $blue
+    border-radius: 100%
+  &_descr
+    width: 343px
+  &_subtitle
+    line-height: 21px
+    color: $blue
+    font-size: 17px
+    font-weight: 400
+    margin-bottom: 0
+  &_text
+    color: white
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
+  &_responsive
+    display: block
+    margin: 0 auto
+    margin-top: 20px
+    width: 100%
+  &_responsive img
+    width: 100%
+    padding: 10px
+    border-radius: 15px
+  &_about
+    margin: 0 auto
+    margin-top: 20px
+    width: 100%
+    color: white
+    &_block
+      margin: 0 auto
+      padding: 30px
+      width: 75%
+      font-size: 20px
+      line-height: 25px
+      font-family: "Roboto Light"
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    &_image
+      background-color: #fff
+      border-radius: 10px
+    &_image img
+      width: 100%
+
+.label
+  position: relative
+  border-radius: 5px
+  margin: 0 auto
+  height: 24px
+  width: 140px
+  padding: 5px 12px
+  background-color: white
+  color: black
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+  z-index: 2
+  &_white
+    background-color: #fff
+    color: #000
+  &_min
+    width: 76px
+
+.title
+  position: relative
+  margin-bottom: 0
+  margin-top: 38px
+  color: white
+  font-size: 38px
+  line-height: 38px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+  z-index: 2
+  &_white
+    color: #fff
+
+.subtitle
+  position: relative
+  margin-top: 19px
+  color: white
+  font-size: 17px
+  font-weight: 400
+  text-align: center
+  z-index: 2
+  &_white
+    color: #fff
+  &_white img
+    width: 30px
+    filter: invert(100%)
+    margin-right: 5px
+  &_white a
+    text-decoration: none
+    color: white
+    transition: .2s all
+  &_white a:hover
+    color: $green
+
+
+.mobile
+  min-height: 864px
+  padding: 60px 0 79px 0
+  background: url('../img/background_mobile.jpg') center (center / cover) no-repeat
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
+  .row
+    margin-top: 32px
+  &_item
+    position: relative
+    width: 320px
+    height: 235px
+    margin: 0 auto
+    margin-bottom: 20px
+    padding-top: 22px
+    &_1
+      background: url('../img/usebility/infinity.jpg') center (center / cover) no-repeat
+      opacity: .9
+      transition: .3s
+      border-radius: 10px
+    &_1:hover
+      opacity: 1
+    &_1 img
+      width: 40%
+      margin: 0 auto
+      transition: .3s all
+    &_1 img:hover
+      rotate: 15deg
+    &_2
+      border-radius: 10px
+      background: url('../img/usebility/lifetime.jpg') center (center / cover) no-repeat
+      opacity: .9
+      filter: brightness(90%)
+      transition: .3s
+    &_2:hover
+      opacity: 1
+    &_2 img
+      width: 40%
+      margin: 0 auto
+      transition: .3s
+    &_2 img:hover
+      rotate: 15deg
+    &_3
+      border-radius: 10px
+      background: url('../img/usebility/installation.jpg') center (center / cover) no-repeat
+      opacity: .9
+      transition: .3s
+    &_3:hover
+      opacity: 1
+    &_3 img
+      width: 40%
+
+      margin: 0 auto
+      transition: .3s
+    &_3 img:hover
+      rotate: 15deg
+    &_4
+      border-radius: 10px
+      background: url('../img/usebility/5.jpg') center (center / cover) no-repeat
+      opacity: .9
+      transition: .3s
+    &_4:hover
+      opacity: 1
+    &_4 img
+      width: 40%
+      margin: 0 auto
+      transition: .3s
+    &_4 img:hover
+      rotate: 15deg
+    &_5
+      border-radius: 10px
+      background: url('../img/usebility/8.jpg') center (center / cover) no-repeat
+      opacity: .9
+      transition: .3s
+    &_5:hover
+      opacity: 1
+    &_5 img
+      width: 40%
+      margin: 0 auto
+      transition: .3s
+    &_5 img:hover
+      rotate: 15deg
+    &_6
+      border-radius: 10px
+      background: url('../img/usebility/7.jpg') center (center / cover) no-repeat
+      opacity: .9
+      transition: .3s
+    &_6:hover
+      opacity: 1
+    &_6 img
+      width: 40%
+      margin: 0 auto
+      transition: .3s
+    &_6 img:hover
+      rotate: 15deg
+    &_7
+      border-radius: 10px
+      background: url('../img/usebility/weight.jpg') center (center / cover) no-repeat
+      opacity: .9
+      transition: .3s
+    &_7:hover
+      opacity: 1
+    &_7 img
+      width: 40%
+      margin: 0 auto
+      transition: .3s
+    &_7 img:hover
+      rotate: 15deg
+    &_8
+      border-radius: 10px
+      background: url('../img/usebility/fouling.jpg') center (center / cover) no-repeat
+      opacity: .9
+      transition: .3s
+    &_8:hover
+      opacity: 1
+    &_8 img
+      width: 40%
+      margin: 0 auto
+      transition: .3s
+    &_8 img:hover
+      rotate: 15deg
+    &_9
+      border-radius: 10px
+      background: url('../img/usebility/4.jpg') center (center / cover) no-repeat
+      opacity: .9
+      transition: .3s
+    &_9:hover
+      opacity: 1
+    &_9 img
+      width: 40%
+      margin: 0 auto
+      transition: .3s
+    &_9 img:hover
+      rotate: 15deg
+
+    &_subtitle
+      display: grid
+      grid-template-rows: 1fr 1fr
+      grid-row-gap: 20px
+      color: #ffffff
+      font-size: 18px
+      font-weight: 400
+      line-height: 31px
+      text-transform: uppercase
+      text-align: center
+      justify-content: flex-start
+    &_plus
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 10px
+      left: 50%
+      transform: translateX(-50%)
+      width: 26px
+      height: 26px
+      background-color: white
+      margin: 0 auto
+      border-radius: 100%
+      cursor: pointer
+      &:before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $green
+        transition: 0.3s all
+      &:after
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        display: block
+        height: 14px
+        width: 2px
+        background-color: $green
+        transition: 0.3s all
+      &:hover
+        &:before, &:after
+          background-color: $tomato
+
+
+.choice
+  position: relative
+  min-height: 795px
+  padding: 60px 0 77px 0
+  //background: url('../img/background_mobile.jpg') center (center / cover) repeat
+  background-color: $green
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
+  &_img
+    position: relative
+    display: block
+    margin: 30px auto 0 auto
+    z-index: 2
+    width: 100%
+    border-radius: 10px
+    opacity: .5
+    transition: .5s all
+  &_img:hover
+    opacity: 1
+  &_descr
+    text-align: center
+    color: #222222
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+  .black
+    position: absolute
+    top: 10px
+    left: 0
+    height: 499px
+    width: 100%
+    background-color: $green
+    z-index: 1
+
+
+.world
+  position: relative
+  min-height: 717px
+  padding: 60px 0
+  background: url('../img/world.jpg') center (center / cover) no-repeat
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2)
+  iframe
+    width: 90%
+    height: 500px
+    display: block
+    margin: 0 auto
+    margin-top: 20px
+footer
+  padding: 14px 23px 39px 23px
+  a
+    &:hover
+      text-decoration: none
+.footer
+  &_divider
+    width: 299px
+    height: 4px
+    background-color: $green
+    margin: 0 auto
+  &_wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 32px
+  &_wrapper > div
+    width: 100%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
+  &_social
+    width: 160px
+    display: flex
+    justify-content: space-between
+    &_item
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 4px
+      width: 32px
+      height: 32px
+      background-color: #070716
+      border-radius: 100%
+      text-decoration: none
+      i
+        color: #fff
+  &_links
+    width: 390px
+    margin: 0 auto
+    text-decoration: none
+    &_main
+      display: flex
+      justify-content: space-between
+      padding: 0 10px
+      a
+        color: #070716
+        font-size: 15px
+        font-weight: 300
+        text-transform: uppercase
+        text-decoration: none
+        transition: .2s all
+      a:hover
+        color: $green
+    &_sub
+      display: flex
+      justify-content: space-between
+      margin-top: 10px
+      a
+        color: #999999
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+        text-decoration: none
+    &_lang
+      display: block
+      margin: 0 auto
+      color: $green
+      font-size: 11px
+      font-weight: 400
+      margin-top: 19px
+      text-transform: uppercase
+      text-align: center
+      text-decoration: none
+.xs-visible
+  display: none
