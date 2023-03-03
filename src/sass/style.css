@@ -51,7 +51,7 @@ nav {
 .promo {
   min-height: 800px;
   width: 100%;
-  background: url("../img/main/main__background3.jpg") center center/cover no-repeat;
+  background: url("../img/main/main__background3.gif") center center/cover no-repeat;
   padding: 150px 0 135px 0;
 }
 .promo_header {
@@ -103,7 +103,7 @@ nav {
 
 .reasons {
   padding: 60px 0 15px 0;
-  background: url("../img/trash2.jpg") center center/cover no-repeat;
+  background: url("../img/trash2.gif") center center/cover no-repeat;
 }
 .reasons_block {
   display: flex;
@@ -162,6 +162,10 @@ nav {
   line-height: 25px;
   font-family: "Roboto Light";
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+}
+.reasons_about_block a {
+  text-decoration: none;
+  color: #87c347;
 }
 .reasons_about_image {
   background-color: #fff;
@@ -881,7 +885,7 @@ footer a:hover {
   }
   .promo {
     min-height: 500px;
-    background: url("../img/main/mobile_back.jpg") center center/cover no-repeat;
+    background: url("../img/main/mobile_back.gif") center center/cover no-repeat;
     padding: 93px 0 35px 0;
   }
   .promo_descr {
