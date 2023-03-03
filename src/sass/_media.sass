@@ -1,3 +1,6 @@
+@media (max-width: 1300px)
+  .promo
+    min-height: 700px
 @media (max-width: 1200px)
   .menu
     &_item
@@ -5,7 +8,7 @@
     &_link
       font-size: 13px
   .promo
-    min-height: 700px
+    min-height: 650px
     &_header
       font-size: 50px
   .reasons
@@ -87,11 +90,16 @@
       &:nth-child(3)
         width: 100%
         justify-content: center
+
+@media (max-width: 950px)
+  .promo
+    min-height: 500px
+
 @media (max-width: 767px)
   .title
     margin-top: 25px
   .promo
-    min-height: 500px
+    min-height: 400px
   .menu
     position: fixed
     flex-direction: column
@@ -179,6 +187,11 @@
     padding: 40px 0
   .world
     min-height: 450px
+
+@media (max-width: 650px)
+  .promo
+    min-height: 350px
+
 @media (max-width: 575px)
   nav
     height: 30px
@@ -209,7 +222,8 @@
       &:hover
         background-image: linear-gradient(to top, $blue 0%, #4ce2ff 100%)
   .promo
-    min-height: 400px
+    min-height: 500px
+    background: url('../img/main/mobile_back.jpg') center (center / cover) no-repeat
     padding: 93px 0 35px 0
     &_descr
       display: none
@@ -340,3 +354,7 @@
           margin: 0 7px
       &_lang
         margin-top: 10px
+
+  @media (max-width: 360px)
+  .promo
+    min-height: 450px
