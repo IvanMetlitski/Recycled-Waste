@@ -141,6 +141,7 @@ nav {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
 }
 .reasons_responsive img {
@@ -960,7 +961,11 @@ footer a:hover {
     display: none;
   }
   .reasons_about_block {
-    width: 95%;
+    margin-top: 40px;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    width: 92%;
+    font-size: 18px;
   }
   .mobile {
     padding: 20px 0 40px 0;
