@@ -488,6 +488,13 @@ nav {
   font-weight: 300;
   line-height: 24px;
 }
+.choice_text {
+  display: none;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: white;
+}
 .choice .black {
   position: absolute;
   top: 10px;
@@ -949,6 +956,12 @@ footer a:hover {
   .reasons_text {
     margin-top: 0;
   }
+  .reasons_about_text {
+    display: none;
+  }
+  .reasons_about_block {
+    width: 95%;
+  }
   .mobile {
     padding: 20px 0 40px 0;
   }
@@ -983,6 +996,10 @@ footer a:hover {
     font-size: 17px;
     font-weight: 300;
     line-height: 24px;
+  }
+  .choice_text {
+    display: block;
+    color: white;
   }
   .choice .black {
     display: none;
